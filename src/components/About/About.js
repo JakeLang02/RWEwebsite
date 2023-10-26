@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'
-import MichaelHeadShot from '/Users/michaelsawarynski/RWEwebsite/src/images/MichaelSHeadshot1.JPG'
+import MichaelHeadShot from '../../images/MichaelSHeadshot1.JPG'
 
 const About = () => {
   return (
