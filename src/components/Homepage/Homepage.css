@@ -1,0 +1,16 @@
+/* Homepage.css */
+div {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
