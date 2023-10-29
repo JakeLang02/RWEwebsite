@@ -1,13 +1,10 @@
-import React from 'react';
-import './About.css'
-import MichaelHeadShot from '../../images/MichaelSHeadshot1.JPG'
+import React from 'react'
+import './Team.css'
+import MichaelHeadShot from '../../images/RWE_Headshots/MichaelSHeadshot1.JPG'
 
-const About = () => {
+const Team = () => {
   return (
-    <div className="about-us-container">
-        <p className="intro-paragraph">
-            Your introductory paragraph here...
-        </p>
+    <div className="about-us-container mx-auto mt-36 p-5"  >
         <div className="photo-grid">
             {[...Array(4)].map((_, rowIndex) => (
                 <div className="photo-row" key={rowIndex}>
@@ -30,4 +27,4 @@ const About = () => {
 );
 }
 
-export default About;
+export default Team;
