@@ -8,7 +8,6 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src={RWELogo} id="logo" alt="RWE Logo"className="h-28 w-28 mr-5"/> {/* further reduce the image dimensions */}
-          <h1>Real World Engineering</h1>
         </div>
         <ul className="flex space-x-6">
           <li><Link to="/" className="hover:text-gray-300 hover:underline text-base font-semibold">Home</Link></li>

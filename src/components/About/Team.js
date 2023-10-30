@@ -1,30 +1,55 @@
 import React from 'react'
+import { ExecList } from '../../helpers/ExecList'
+import { SDList } from '../../helpers/SDList'
+import { BusinessList } from '../../helpers/BusinessList'
+import TeamMember from '../../helpers/TeamMember'
 import './Team.css'
-import MichaelHeadShot from '../../images/RWE_Headshots/MichaelSHeadshot1.JPG'
 
 const Team = () => {
-  return (
-    <div className="about-us-container mx-auto mt-36 p-5"  >
-        <div className="photo-grid">
-            {[...Array(4)].map((_, rowIndex) => (
-                <div className="photo-row" key={rowIndex}>
-                    {[...Array(3)].map((_, colIndex) => (
-                        <div className="photo" key={colIndex}>
-                            <img src={MichaelHeadShot} alt={`Description ${rowIndex * 3 + colIndex}`} />
-                        </div>
-                    ))}
-                </div>
-            ))}
-            <div className="photo-row bottom-row">
-                {[...Array(2)].map((_, index) => (
-                    <div className="photo" key={index}>
-                        <img src={MichaelHeadShot} alt={`Description 12${index}`} />
-                    </div>
-                ))}
-            </div>
+    return (
+      <div className="Team mx-auto mt-36">
+        
+        <h1 class = "text-5xl mb-4 text-indigo-600">Executive Board</h1>
+        <div className="TeamList">
+          {ExecList.map((teamMember, key) => {
+            return (
+              <TeamMember
+                key={key}
+                image={teamMember.image}
+                name={teamMember.name}
+              />
+            );
+          })}
         </div>
-    </div>
-);
-}
+
+        <h1 class = "text-5xl mb-4 text-indigo-600">Solar Drone Team</h1>
+        <div className="TeamList">
+          {SDList.map((teamMember, key) => {
+            return (
+              <TeamMember
+                key={key}
+                image={teamMember.image}
+                name={teamMember.name}
+              />
+            );
+          })}
+        </div>
+
+        <h1 class = "text-5xl mb-4 text-indigo-600">Business Board</h1>
+        <div className="TeamList">
+          {BusinessList.map((teamMember, key) => {
+            return (
+              <TeamMember
+                key={key}
+                image={teamMember.image}
+                name={teamMember.name}
+              />
+            );
+          })}
+        </div>
+        
+      </div>
+    );
+  }
 
 export default Team;
