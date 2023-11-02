@@ -5,19 +5,19 @@ import Matt from '../images/RWE_Headshots/MattSzatkowski.JPG'
 
 export const BusinessList = [
     {
-        name: "Michael Sawarynski",
+        name: "Web Chair, Michael Sawarynski",
         image: Michael,
     },
     {
-        name: "George Giannopoulus",
+        name: "Recruitment Chair, George Giannopoulus",
         image: George,
     },
     {
-        name: "Jake Lang",
+        name: "Web Chair, Jake Lang",
         image: Jake,
     },
     {
-        name: "Matt Szatkowski",
+        name: "Sponsorship Chair, Matt Szatkowski",
         image: Matt,
     },
 ];

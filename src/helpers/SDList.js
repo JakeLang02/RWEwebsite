@@ -6,23 +6,23 @@ import AJ from '../images/RWE_Headshots/AJSawmiller.JPG'
 
 export const SDList = [
     {
-        name: "Aaron Schumer",
+        name: "Software Lead, Aaron Schumer",
         image: Aaron,
     },
     {
-        name: "AJ Sawmiller",
+        name: "CAD Lead, AJ Sawmiller",
         image: AJ,
     },
     {
-        name: "Braxton Eisel",
+        name: "Structures Lead, Braxton Eisel",
         image: Braxton,
     },
     {
-        name: "Gage Pollard",
+        name: "Electronics Lead, Gage Pollard",
         image: Gage,
     },
     {
-        name: "James Bautista",
+        name: "Solar Drone Chief Engineer, James Bautista",
         image: James,
     },
 ];
