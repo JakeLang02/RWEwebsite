@@ -42,7 +42,7 @@
 /* This ensures the image and team content doesn't overlap the viewport width */
 .OuterContainer {
   display: grid;
-  margin-left: 0px;
+  margin-left: -65px;
   margin-right: 0px;
 
 }
