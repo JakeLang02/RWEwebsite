@@ -1,64 +1,84 @@
 .Team {
-  width: 100%;
-  height: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 5em auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-.Team .TeamTitle {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 60px;
-}
-  
-.TeamList {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-}
-  
-/* Team Member STYLING */
-  
-.TeamMember {
-  width: 300px;
-  height: 350px;
-  margin: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  background-color: #f5f7fa;
+  border-radius: 15px;
+  padding: 2em 0;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
 }
 
-.TeamMember h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  font-weight: bolder;
+.TeamTitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff; /* Making the font white */
+  background-color: #333; /* Making the background grey */
+  padding: 0.5em 1em; /* Padding for spacing inside the background */
+  border-radius: 15px; /* Rounded edges */
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.TeamList {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  align-items: center;
+  background-color: #242c4f;
+}
+
+.TeamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+  height: 470px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .TeamMember:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in;
-  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
-  
+
 .TeamMember div {
   width: 100%;
-  height: 270px;
+  height: 420px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: filter 0.3s ease;
 }
-  
-.TeamMember h1,
-.TeamMember p {
-  margin-left: 20px;
+
+.TeamMember:hover div {
+  filter: brightness(90%);
 }
-  
+
+.TeamMember h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1300px) {
   .TeamList {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-  
+
 @media only screen and (max-width: 800px) {
   .TeamList {
     grid-template-columns: 1fr;

@@ -1,4 +1,4 @@
-import Grant from '../images/RWE_Headshots/GrantSherman.JPG'
+import Grant from '../images/RWE_Headshots/GrantSherman3.JPG'
 import Jordan from '../images/RWE_Headshots/JordanRhymer.JPG'
 import Garrett from '../images/RWE_Headshots/GarrettLeath.JPG'
 import Jason from '../images/RWE_Headshots/JasonDecker.JPG'
