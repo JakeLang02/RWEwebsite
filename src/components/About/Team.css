@@ -15,15 +15,17 @@
 
 
 .TeamTitle {
+  
   font-family: 'Arial', sans-serif;
   font-size: 2.5rem;
   color: #ffffff; /* Making the font white */
-  background-color: #333; /* Making the background grey */
+  background-color: transparent; /* Making the background grey */
   padding: 0.5em 1em; /* Padding for spacing inside the background */
   border-radius: 15px; /* Rounded edges */
   margin-bottom: 1.5em;
   text-transform: uppercase;
   letter-spacing: 1px;
+
 }
 
 
@@ -31,12 +33,59 @@
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  gap: .01em;
   align-items: center;
   background-color: #242c4f;
   color: #ffffff;
   text-align: center;
 }
+/* This ensures the image and team content doesn't overlap the viewport width */
+.OuterContainer {
+  display: grid;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+.TeamHeader {
+  position: relative;
+  width: 100vw; /* viewport width to span the entire screen width */
+  overflow: hidden; 
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.TeamHeaderImage {
+  width: 100vw; 
+  height: 80vh; /* Set the height to be 30% of the viewport height. Adjust this value as needed. */
+  object-fit: cover; /* Ensures the image covers the entire div without distortion */
+  display: block;
+  /*filter: blur(1.5px); */
+  transform: scale(1.05);
+
+}
+
+.TeamHeaderContent {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering technique using absolute positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure the content covers the entire width of the image */
+  text-align: center;
+  color: white; 
+}
+
+.TeamHeaderContent h1 {
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for better text visibility */
+}
+
 
 /**.TeamMember {
   display: flex;
