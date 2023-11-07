@@ -1,4 +1,4 @@
-import Grant from '../images/RWE_Headshots/GrantSherman.JPG'
+import Grant from '../images/RWE_Headshots/GrantSherman3.JPG'
 import Jordan from '../images/RWE_Headshots/JordanRhymer.JPG'
 import Garrett from '../images/RWE_Headshots/GarrettLeath.JPG'
 import Jason from '../images/RWE_Headshots/JasonDecker.JPG'
@@ -8,31 +8,31 @@ import James from '../images/RWE_Headshots/JamesBautista.JPG'
 
 export const ExecList = [
     {
-        name: "Garrett Leath",
+        name: "VP of Operations, Garrett Leath",
         image: Garrett,
     },
     {
-        name: "Grant Sherman",
+        name: "President, Grant Sherman",
         image: Grant,
     },
     {
-        name: "James Bautista",
+        name: "Solar Drone Cheif Engineer, James Bautista",
         image: James,
     },
     {
-        name: "Jason Decker",
+        name: "VP of Membership, Jason Decker",
         image: Jason,
     },
     {
-        name: "Jordan Rhymer",
+        name: "VP of Business, Jordan Rhymer",
         image: Jordan,
     },
     {
-        name: "Lucas Bradshaw",
+        name: "Secretary, Lucas Bradshaw",
         image: Lucas,
     },
     {
-        name: "Nick Famiglietti",
+        name: "Treasurer, Nick Famiglietti",
         image: Nick,
     },
     
