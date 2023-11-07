@@ -1,0 +1,11 @@
+.container-fluid {
+    height: 100px;
+    width:100%;
+    background-color: #1c1917;
+    display: flex;
+    flex-direction: column;
+}
+  
+.footer content {
+    color: white;
+}
