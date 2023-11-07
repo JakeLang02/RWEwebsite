@@ -24,7 +24,7 @@ const Team = () => {
 
     
     return (
-      <div className="OuterContainer mx-auto mt-10">
+      <div className="OuterContainer mx-auto mt-6">
           <div className="TeamHeader">
               <img src={groupPhoto} alt="Team Group Photo" className="TeamHeaderImage" />
               <div className="TeamHeaderContent">

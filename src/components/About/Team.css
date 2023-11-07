@@ -35,9 +35,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: .01em;
   align-items: center;
-  background-color: #242c4f;
+  background-color: black;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
+  font-weight: 400;
+  font-size: x-large;
 }
 /* This ensures the image and team content doesn't overlap the viewport width */
 .OuterContainer {
@@ -82,6 +84,7 @@ body {
 
 .TeamHeaderContent h1 {
   font-size: 3rem;
+  font-weight: 600;
   letter-spacing: 1.5px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for better text visibility */
 }
@@ -118,7 +121,8 @@ body {
 }
 
 .TeamMember:hover div {
-  filter: brightness(90%);
+  filter:contrast(110%);
+  filter:drop-shadow(100);
 }
 
 .TeamMember h2 {
